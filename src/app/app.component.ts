@@ -112,6 +112,9 @@ export class AppComponent implements OnInit, OnDestroy {
     return obj;
   }
 
+  newFunc() {
+    console.log("added new bracn");
+  }
   onInputChange(event: Event) {
     //console.log((<HTMLInputElement>event.target).value);
     this.classToAdd = !this.classToAdd;
