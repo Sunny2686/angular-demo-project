@@ -13,8 +13,12 @@
   border-radius: 5px;
   border-style: none;
   transform: rotate(0);
-  
+
 }
+.hello {
+  border-radius:25px 20px;
+}
+
 .btn:hover {
   background: orange;
   height: 100%;
@@ -29,3 +33,13 @@ router-outlet ~ * {
   height: 100%;
   width: 100%;
 }
+
+
+
+
+
+
+
+
+
+
