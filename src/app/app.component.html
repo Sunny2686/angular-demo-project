@@ -11,21 +11,25 @@
       routerLink="{{ ele }}"
       *ngFor="let ele of navLinks; let i = index"
       style="padding-right: 1em"
+      appBetterHighlight
       >{{ ele }}</a
     >
     <!-- <input type="text" value="" (change)="onInputChange($event)" /> -->
     <input type="text" [(ngModel)]="inputItem" *ngIf="change; else noInput" />
     <ng-template #noInput>
-      <p>Click to add input field</p>
+      <p appBetterHighlight [defaultColor]="'yellow'">
+        Click to add input field
+      </p>
     </ng-template>
-    <button
+    <!-- <button
       (click)="onInputChange()"
       style="width: 40%; height: 10%"
       [ngClass]="addClass()"
       [ngStyle]="{ backgroundColor: getServerStatus() }"
-    >
-      Button
-    </button>
+    > 
+  -->
+    <!-- Button
+    </button> -->
   </div>
   <div
     style="width: 100%; height: 100%"
