@@ -13,6 +13,7 @@ import { PracticalComponent } from "./practical/practical.component";
 import { PractiseDirective } from "./shared/practise.directive";
 import { PracComponent } from "./prac/prac.component";
 import { BasicHighlightDirective } from "./shared/basic-highlight.directive";
+import { BetterHighlightDirective } from './shared/better-highlight.directive';
 
 const appRoute: Routes = [
   { path: "home", component: AppComponent, data: { animation: "home" } },
@@ -44,6 +45,7 @@ const appRoute: Routes = [
     PractiseDirective,
     PracComponent,
     BasicHighlightDirective,
+    BetterHighlightDirective,
   ],
   imports: [
     BrowserModule,
