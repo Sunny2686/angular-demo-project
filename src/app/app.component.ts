@@ -37,6 +37,7 @@ import { slideInAnimation } from "./animation";
   animations: [slideInAnimation],
 })
 export class AppComponent implements OnInit, OnDestroy {
+  goku = true;
   @ViewChild("navElement", { static: true }) navElement: ElementRef;
   inputItem = "ravi sshekhar";
   isTrue = true;

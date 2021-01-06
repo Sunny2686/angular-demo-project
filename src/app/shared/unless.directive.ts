@@ -1,10 +1,20 @@
-import { Directive } from '@angular/core';
+import {
+  Directive,
+  ElementRef,
+  HostBinding,
+  Input,
+  OnInit,
+  Renderer2,
+} from "@angular/core";
 
 @Directive({
-  selector: '[appUnless]'
+  selector: "[appUnless]",
 })
-export class UnlessDirective {
+export class UnlessDirective implements OnInit {
+  // chage: boolean = false;
+  @Input() defaultState: boolean;
+  @HostBinding("style.visibility") visibility = 0;
+  constructor(private elTRef: ElementRef, private renderer: Renderer2) {}
 
-  constructor() { }
-
+  ngOnInit() {}
 }
