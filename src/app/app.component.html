@@ -37,4 +37,7 @@
     <router-outlet #outlet="outlet"></router-outlet>
   </div>
 </div>
-<app-new-practise [element]="goku"></app-new-practise>
+<app-new-practise [srvElement]="goku" (serverCreated)="onServerCreated($event)"
+  ><P>HeLLO EVERone</P>
+  <input type="checkbox" value="ravi" style="width: 500px" />
+</app-new-practise>

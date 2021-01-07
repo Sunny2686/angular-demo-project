@@ -101,6 +101,9 @@ export class AppComponent implements OnInit, OnDestroy {
     //   .subscribe(console.log);
   }
 
+  onServerCreated(event) {
+    console.log(event);
+  }
   getServerStatus() {
     //return this.division;
     return this.change ? "pink" : "blue";
